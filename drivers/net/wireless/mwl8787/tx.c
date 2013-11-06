@@ -175,7 +175,7 @@ void mwl8787_tx_work(struct work_struct *work)
 			    MWL8787_TX_CT_LO)
 				mwl8787_start_queue(priv, hw_queue);
 
-			ieee80211_monitor_tx_rx(priv->hw, skb, 0);
+			/* ieee80211_monitor_tx_rx(priv->hw, skb, 0); */
 		}
 	}
 }
